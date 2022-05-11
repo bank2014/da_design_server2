@@ -9,7 +9,7 @@ def test_logger():
     """
     from da_design_server2.src import mylogger
     try:
-        m = mylogger.get_logger('test', '/home/u1000/da_design_server2/log')
+        m = mylogger.get_logger('test', '/home/u1029/da_design_server2/log')
         m.debug('hi, debug')
     except Exception as e:
         print(e)
@@ -24,7 +24,7 @@ def test_config():
     """
     from da_design_server2.src import myconfig
     try:
-        m = myconfig.get_config('/home/u1000/da_design_server2/share/test.config')
+        m = myconfig.get_config('/home/u1029/da_design_server2/share/test.config')
         print('key1=', m['general'].get('key1'))
         print('key2=', m['general'].get('key2'))
         print('key3=', m['logger'].get('key3'))
